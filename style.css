@@ -1,7 +1,8 @@
 body {
     font-family: Arial, sans-serif;
-    background-image: url("your-random-background-image.jpg");
+    background-image: url("https://cdn.pixabay.com/photo/2023/04/09/06/18/explosion-7910812_1280.jpg");
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
     color: white;
     margin: 0;
@@ -44,4 +45,27 @@ button:hover {
 
 li {
     margin-bottom: 8px;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+.weather-info,
+.geolocation-info {
+    margin-bottom: 20px;
+}
+
+#weatherData, #geolocationData {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#error {
+    color: red;
+}
+
+.hidden{
+    display: none;
 }

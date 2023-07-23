@@ -1,13 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>To-Do List Webpage</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Nomad Channy</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
     <div class="container">
-        <h1>To-Do List</h1>
-        <div class="input-container">
+        <h2 id="clock"></h2>
+        <div id="login" class="input-container">
+            <input type="text" id="loginInput" placeholder="Enter your name">
+            <button onclick="login()">Add</button>
+        </div>
+        <div class="weather-container">
+            <h1>날씨와 위치 정보</h1>
+            <div class="weather-info">
+                <h2>날씨 정보</h2>
+                <div id="weatherData">
+                    <!-- 날씨 데이터가 여기에 표시됩니다 -->
+                </div>
+            </div>
+            <div class="geolocation-info">
+                <h2>위치 정보</h2>
+                <div id="geolocationData">
+                    <!-- 위치 정보가 여기에 표시됩니다 -->
+                </div>
+            </div>
+        </div>
+        <h1>To do list</h1>
+        <div id="todolist" class="input-container">
             <input type="text" id="taskInput" placeholder="Enter a new task...">
             <button onclick="addTask()">Add</button>
         </div>
